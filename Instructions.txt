@@ -1,0 +1,27 @@
+Project NorthServices
+	References
+		1. System.ServiceMode1
+	Nuget Packages
+		1. Install-Package EntityFramework
+
+Project NorthSBRelayHostConApp
+	References
+		1. System.ServiceModel
+		2. System.Configuration
+		3. NorthService
+
+	Nuget Packages
+		1. Install-Package EntityFramework
+		2. Install-Package WindowsAzure.ServiceBus
+		3. Install-Package Microsoft.WindowsAzure.ConfigurationManager
+
+Project NorthSBRelayClientConApp
+	References
+		1. System.ServiceModel
+		2. System.Configuration
+		3. (Copy the interface INorthService and the Product and Category Calss)
+
+	Nuget Packages
+		1. Install-Package EntityFramework
+		2. Install-Package WindowsAzure.ServiceBus
+		3. Install-Package Microsoft.WindowsAzure.ConfigurationManager
